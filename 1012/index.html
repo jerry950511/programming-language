@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1012 div排版</title>
+</head>
+
+<body>
+    <div id="sitebody">
+        <center>
+            <a href="https://jerry950511.github.io/programming-language/">回首頁</a>
+        </center>
+        <header>
+            header
+        </header>
+        <nav>nav</nav>
+        <div class="container">
+            <span class="aside">aside</span>
+            <span class="article">article
+                <div class="section">section</div>
+            </span>
+
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sitebody {
+        height: 600px;
+        width: 800px;
+    }
+
+    header,
+    nav,
+    .container,
+    footer {
+        margin: 5px;
+    }
+
+    header {
+        background-color: orange;
+        height: 100px;
+    }
+
+    nav {
+        background-color: deeppink;
+        height: 25px;
+    }
+
+    .container {
+        width: auto;
+        height: 350px;
+        display: flex;
+    }
+
+    .aside {
+        background-color: pink;
+        width: 250px;
+        margin-right: 5px;
+    }
+
+    .article {
+        background-color: deepskyblue;
+        width: 800px;
+    }
+
+    .section {
+        background-color: yellow;
+        margin: 5px;
+        width: auto;
+        height: 100px;
+        position: relative;
+        top: 220px;
+    }
+
+    footer {
+        background-color: darkseagreen;
+        height: 100px;
+    }
+</style>
+
+</html>
